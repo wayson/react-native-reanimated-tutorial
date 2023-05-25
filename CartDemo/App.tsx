@@ -57,8 +57,8 @@ function App(): JSX.Element {
                 console.log(
                   `button x: ${x}, y: ${y}, width: ${width}, height: ${height}, pageX: ${pageX}, pageY: ${pageY}`,
                 );
-                left.value = x;
-                top.value = y;
+                left.value = pageX;
+                top.value = pageY;
               },
             );
             topRef.current.measure((x, y, width, height, pageX, pageY) => {
